@@ -1,0 +1,362 @@
+.opportunities {
+  min-block-size: 100vh;
+  padding-block: 2rem;
+}
+
+.container {
+  max-inline-size: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Hero Section */
+.opportunities-hero {
+  text-align: center;
+  margin-block-end: 3rem;
+  padding-block: 3rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 1rem;
+}
+
+.opportunities-hero h1 {
+  font-size: 3rem;
+  margin-block-end: 1rem;
+  font-weight: 700;
+}
+
+.opportunities-hero p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  max-inline-size: 600px;
+  margin-inline: auto;
+}
+
+/* Search and Filters */
+.opportunities-search {
+  margin-block-end: 3rem;
+}
+
+.search-filters {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.search-bar {
+  margin-block-end: 1.5rem;
+}
+
+.search-bar input {
+  inline-size: 100%;
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filters select {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  min-inline-size: 150px;
+}
+
+.filters select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Results Header */
+.results-header {
+  margin-block-end: 2rem;
+}
+
+.results-header h2 {
+  font-size: 1.75rem;
+  color: #2d3748;
+  margin: 0;
+}
+
+/* Opportunities Grid */
+.opportunities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-block-end: 3rem;
+}
+
+.opportunity-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.opportunity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.opportunity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-block-end: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.type-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 2rem;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.opportunity-deadline {
+  font-size: 0.85rem;
+  color: #e53e3e;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  background: #fed7d7;
+  border-radius: 0.5rem;
+}
+
+.opportunity-content h3 {
+  font-size: 1.25rem;
+  margin-block-end: 0.5rem;
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.opportunity-content .company {
+  font-size: 1rem;
+  color: #4a5568;
+  font-weight: 500;
+  margin-block-end: 0.5rem;
+}
+
+.opportunity-content .location,
+.opportunity-content .compensation {
+  font-size: 0.9rem;
+  color: #666;
+  margin-block-end: 0.5rem;
+}
+
+.opportunity-content .description {
+  color: #4a5568;
+  margin-block: 1rem;
+  line-height: 1.5;
+}
+
+.requirements {
+  margin-block: 1rem;
+}
+
+.requirements strong {
+  color: #2d3748;
+  font-size: 0.9rem;
+}
+
+.requirements ul {
+  margin-block-start: 0.5rem;
+  padding-inline-start: 1.2rem;
+}
+
+.requirements li {
+  font-size: 0.85rem;
+  color: #4a5568;
+  margin-block-end: 0.3rem;
+}
+
+/* Opportunity Actions */
+.opportunity-actions {
+  display: flex;
+  gap: 1rem;
+  margin-block-start: 1.5rem;
+  padding-block-start: 1rem;
+  border-block-start: 1px solid #e2e8f0;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.btn-primary:hover {
+  background: #5a67d8;
+  border-color: #5a67d8;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #667eea;
+  border-color: #667eea;
+}
+
+.btn-outline:hover {
+  background: #667eea;
+  color: white;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #4a5568;
+}
+
+.no-results p {
+  font-size: 1.1rem;
+}
+
+/* Post Opportunity Section */
+.post-opportunity {
+  margin-block-start: 4rem;
+}
+
+.post-card {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.post-card h3 {
+  font-size: 1.75rem;
+  margin-block-end: 1rem;
+  font-weight: 600;
+}
+
+.post-card p {
+  font-size: 1.1rem;
+  margin-block-end: 2rem;
+  opacity: 0.9;
+  max-inline-size: 600px;
+  margin-inline: auto;
+}
+
+.post-card .btn {
+  background: white;
+  color: #f5576c;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.post-card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .opportunities-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .opportunities-hero p {
+    font-size: 1rem;
+  }
+  
+  .search-filters {
+    padding: 1.5rem;
+  }
+  
+  .filters {
+    flex-direction: column;
+  }
+  
+  .filters select {
+    min-inline-size: auto;
+  }
+  
+  .opportunities-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .opportunity-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .opportunity-actions {
+    flex-direction: column;
+  }
+  
+  .post-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .post-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    padding-inline: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .opportunity-card {
+    padding: 1rem;
+  }
+  
+  .type-badge {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .opportunity-deadline {
+    font-size: 0.75rem;
+  }
+}

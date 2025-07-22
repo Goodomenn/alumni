@@ -1,0 +1,581 @@
+.recognition {
+  min-block-size: 100vh;
+  padding-block: 2rem;
+}
+
+.container {
+  max-inline-size: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Hero Section */
+.recognition-hero {
+  text-align: center;
+  margin-block-end: 4rem;
+  padding-block: 4rem 3rem;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border-radius: 1rem;
+}
+
+.recognition-hero h1 {
+  font-size: 3.5rem;
+  margin-block-end: 1rem;
+  font-weight: 700;
+}
+
+.recognition-hero > p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-block-end: 3rem;
+  max-inline-size: 600px;
+  margin-inline: auto;
+}
+
+.hero-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.highlight-icon {
+  font-size: 2rem;
+}
+
+.highlight-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffd700;
+}
+
+.highlight-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Tabs Section */
+.recognition-tabs {
+  margin-block-end: 4rem;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-block-end: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 1rem 2rem;
+  border: 2px solid #e2e8f0;
+  background: white;
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #4a5568;
+}
+
+.tab-btn.active {
+  background: #f093fb;
+  color: white;
+  border-color: #f093fb;
+}
+
+.tab-btn:hover:not(.active) {
+  border-color: #f093fb;
+  color: #f093fb;
+}
+
+.tab-content {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+/* Kudos Wall */
+.wall-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.wall-header h2 {
+  color: #2d3748;
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.kudos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.kudos-card {
+  background: #f8fafc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kudos-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.kudos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.category-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 2rem;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.kudos-date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.kudos-recipient {
+  margin-block-end: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.kudos-giver {
+  color: #4a5568;
+  font-size: 0.9rem;
+  margin-block-end: 1rem;
+}
+
+.kudos-message {
+  color: #2d3748;
+  line-height: 1.6;
+  font-style: italic;
+  margin-block-end: 1.5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-inline-start: 4px solid #f093fb;
+}
+
+.kudos-actions {
+  display: flex;
+  gap: 1rem;
+  padding-block-start: 1rem;
+  border-block-start: 1px solid #e2e8f0;
+}
+
+.like-btn,
+.share-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  background: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+}
+
+.like-btn:hover {
+  background: #fed7e2;
+  border-color: #f093fb;
+}
+
+.share-btn:hover {
+  background: #e2e8f0;
+}
+
+/* Achievements Showcase */
+.achievements-showcase h2 {
+  text-align: center;
+  margin-block-end: 2rem;
+  color: #2d3748;
+  font-size: 2rem;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.achievement-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card::before {
+  content: '';
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 4px;
+  background: linear-gradient(90deg, #f093fb, #f5576c);
+}
+
+.achievement-badge {
+  position: absolute;
+  inset-block-start: 1rem;
+  inset-inline-end: 1rem;
+  font-size: 1.5rem;
+}
+
+.achievement-avatar {
+  font-size: 4rem;
+  margin-block-end: 1rem;
+}
+
+.achievement-content h3 {
+  color: #2d3748;
+  font-size: 1.5rem;
+  margin-block-end: 0.5rem;
+}
+
+.achievement-content h4 {
+  color: #f093fb;
+  font-size: 1.1rem;
+  margin-block-end: 1rem;
+  font-weight: 600;
+}
+
+.achievement-content p {
+  color: #4a5568;
+  margin-block-end: 1rem;
+  line-height: 1.5;
+}
+
+.achievement-month {
+  background: #f093fb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* Badges Collection */
+.badges-collection h2 {
+  text-align: center;
+  margin-block-end: 1rem;
+  color: #2d3748;
+  font-size: 2rem;
+}
+
+.badges-collection > p {
+  text-align: center;
+  color: #4a5568;
+  margin-block-end: 3rem;
+  font-size: 1.1rem;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.badge-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease;
+}
+
+.badge-card:hover {
+  transform: translateY(-4px);
+}
+
+.badge-icon {
+  font-size: 3rem;
+  margin-block-end: 1rem;
+}
+
+.badge-card h3 {
+  color: #2d3748;
+  margin-block-end: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.badge-card p {
+  color: #4a5568;
+  margin-block-end: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.badge-count {
+  color: #f093fb;
+  font-weight: 600;
+  margin-block-end: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Recognition Features */
+.recognition-features {
+  margin-block-end: 4rem;
+}
+
+.recognition-features h2 {
+  font-size: 2.5rem;
+  margin-block-end: 3rem;
+  color: #2d3748;
+  text-align: center;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.program-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-4px);
+}
+
+.program-icon {
+  font-size: 3rem;
+  display: block;
+  margin-block-end: 1rem;
+}
+
+.program-card h3 {
+  margin-block-end: 1rem;
+  color: #2d3748;
+  font-size: 1.25rem;
+}
+
+.program-card p {
+  color: #4a5568;
+  margin-block-end: 1.5rem;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.recognition-cta {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-block-end: 1rem;
+  font-weight: 700;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-block-end: 2rem;
+  opacity: 0.9;
+  max-inline-size: 600px;
+  margin-inline: auto;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background: #f093fb;
+  color: white;
+  border-color: #f093fb;
+}
+
+.btn-primary:hover {
+  background: #e879f9;
+  border-color: #e879f9;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #f093fb;
+  border-color: #f093fb;
+}
+
+.btn-outline:hover {
+  background: #f093fb;
+  color: white;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.recognition-cta .btn {
+  background: white;
+  color: #667eea;
+}
+
+.recognition-cta .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recognition-cta .btn-outline {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.recognition-cta .btn-outline:hover {
+  background: white;
+  color: #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recognition-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-highlights {
+    gap: 2rem;
+  }
+  
+  .highlight-value {
+    font-size: 2rem;
+  }
+  
+  .tab-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-btn {
+    inline-size: 100%;
+    max-inline-size: 300px;
+  }
+  
+  .wall-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .kudos-grid,
+  .achievements-grid,
+  .badges-grid,
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .kudos-actions {
+    flex-direction: column;
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-actions .btn {
+    inline-size: 100%;
+    max-inline-size: 300px;
+  }
+  
+  .container {
+    padding-inline: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-content {
+    padding: 1rem;
+  }
+  
+  .kudos-card,
+  .achievement-card,
+  .badge-card,
+  .program-card {
+    padding: 1rem;
+  }
+  
+  .kudos-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .achievement-badge {
+    position: static;
+    margin-block-end: 1rem;
+  }
+}

@@ -1,0 +1,565 @@
+.mentorship {
+  min-block-size: 100vh;
+  padding-block: 2rem;
+}
+
+.container {
+  max-inline-size: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Hero Section */
+.mentorship-hero {
+  text-align: center;
+  margin-block-end: 4rem;
+  padding-block: 4rem 3rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 1rem;
+}
+
+.mentorship-hero h1 {
+  font-size: 3.5rem;
+  margin-block-end: 1rem;
+  font-weight: 700;
+}
+
+.mentorship-hero > p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-block-end: 3rem;
+  max-inline-size: 600px;
+  margin-inline: auto;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffd700;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Tabs Section */
+.mentorship-tabs {
+  margin-block-end: 4rem;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-block-end: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 1rem 2rem;
+  border: 2px solid #e2e8f0;
+  background: white;
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #4a5568;
+}
+
+.tab-btn.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.tab-btn:hover:not(.active) {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.tab-content {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+/* Find Mentor Tab */
+.mentor-filters h3 {
+  margin-block-end: 1.5rem;
+  color: #2d3748;
+  font-size: 1.5rem;
+}
+
+.filter-row {
+  display: flex;
+  gap: 1rem;
+  margin-block-end: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-row select {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  min-inline-size: 200px;
+}
+
+.filter-row select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.mentors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.mentor-card {
+  background: #f8fafc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mentor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mentor-header {
+  display: flex;
+  gap: 1rem;
+  margin-block-end: 1rem;
+  align-items: flex-start;
+}
+
+.mentor-avatar {
+  font-size: 3rem;
+  inline-size: 4rem;
+  block-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: white;
+  flex-shrink: 0;
+}
+
+.mentor-info {
+  flex-grow: 1;
+}
+
+.mentor-info h4 {
+  margin: 0 0 0.25rem 0;
+  color: #2d3748;
+  font-size: 1.1rem;
+}
+
+.mentor-title {
+  color: #4a5568;
+  margin: 0 0 0.25rem 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.mentor-company {
+  color: #667eea;
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.mentor-rating {
+  text-align: end;
+  font-size: 0.85rem;
+}
+
+.rating {
+  display: block;
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.sessions {
+  color: #666;
+  font-size: 0.75rem;
+}
+
+.mentor-bio {
+  color: #4a5568;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-block-end: 1rem;
+}
+
+.mentor-expertise {
+  margin-block-end: 1rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: #667eea;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  margin-inline-end: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
+.mentor-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+  margin-block-end: 1rem;
+  flex-wrap: wrap;
+}
+
+.mentor-actions {
+  display: flex;
+  gap: 1rem;
+  padding-block-start: 1rem;
+  border-block-start: 1px solid #e2e8f0;
+}
+
+/* Become Mentor Tab */
+.mentor-signup {
+  text-align: center;
+}
+
+.mentor-signup h3 {
+  font-size: 2rem;
+  margin-block-end: 1rem;
+  color: #2d3748;
+}
+
+.mentor-signup > p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-block-end: 3rem;
+  max-inline-size: 600px;
+  margin-inline: auto;
+}
+
+.mentor-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-block-end: 3rem;
+}
+
+.benefit {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  display: block;
+  margin-block-end: 1rem;
+}
+
+.benefit h4 {
+  margin-block-end: 0.5rem;
+  color: #2d3748;
+}
+
+.benefit p {
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+/* How It Works Tab */
+.how-it-works-tab h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-block-end: 3rem;
+  color: #2d3748;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.step {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.step-number {
+  inline-size: 3rem;
+  block-size: 3rem;
+  border-radius: 50%;
+  background: #667eea;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto 1rem auto;
+}
+
+.step h4 {
+  margin-block-end: 0.5rem;
+  color: #2d3748;
+}
+
+.step p {
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+/* Testimonials */
+.mentorship-testimonials {
+  margin-block-end: 4rem;
+}
+
+.mentorship-testimonials h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-block-end: 3rem;
+  color: #2d3748;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-block-end: 1.5rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.testimonial-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.testimonial-footer strong {
+  color: #2d3748;
+}
+
+.testimonial-footer span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.outcome {
+  color: #667eea !important;
+  font-weight: 500 !important;
+}
+
+/* CTA Section */
+.mentorship-cta {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-block-end: 1rem;
+  font-weight: 700;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-block-end: 2rem;
+  opacity: 0.9;
+  max-inline-size: 600px;
+  margin-inline: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.btn-primary:hover {
+  background: #5a67d8;
+  border-color: #5a67d8;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #667eea;
+  border-color: #667eea;
+}
+
+.btn-outline:hover {
+  background: #667eea;
+  color: white;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.mentorship-cta .btn {
+  background: white;
+  color: #f5576c;
+}
+
+.mentorship-cta .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mentorship-cta .btn-outline {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.mentorship-cta .btn-outline:hover {
+  background: white;
+  color: #f5576c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mentorship-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-stats {
+    gap: 2rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .tab-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-btn {
+    inline-size: 100%;
+    max-inline-size: 300px;
+  }
+  
+  .filter-row {
+    flex-direction: column;
+  }
+  
+  .filter-row select {
+    min-inline-size: auto;
+  }
+  
+  .mentors-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mentor-actions {
+    flex-direction: column;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-buttons .btn {
+    inline-size: 100%;
+    max-inline-size: 300px;
+  }
+  
+  .container {
+    padding-inline: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-content {
+    padding: 1rem;
+  }
+  
+  .mentor-card {
+    padding: 1rem;
+  }
+  
+  .mentor-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .mentor-avatar {
+    align-self: center;
+  }
+  
+  .mentor-rating {
+    text-align: center;
+  }
+}
